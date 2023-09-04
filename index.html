@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteio</title>
+</head>
+
+<body>
+    <main>
+        <div class="escolha">
+            <button id="btnNomes">Sortear Nomes</button>
+            <button id="btnNumeros">Sortear Números</button>
+        </div>
+
+        <section class="sorteio" id="sorteioNomes">
+            <div class="container">
+                <h2>SORTEAR NOMES</h2>
+                <div class="linha"></div>
+                <div class="formulario container">
+                    <label for="entradaNomes">Adicione os nomes para o sorteio</label>
+                    <textarea id="entradaNomes"
+                        placeholder="Adicione os nomes separados por vírgula. ex:(Juliana, Rebeca, luana)"></textarea>
+                    <button class="sortear">Sortear</button>
+                </div>
+                <div class="resultado">
+                    <p>Resultado: </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sorteio" id="sorteioNumeros" style="display: none;">
+            <div class="container">
+                <h2>SORTEAR NÚMEROS</h2>
+                <div class="linha"></div>
+                <div class="formulario container">
+                    <label for="entradaNumeros">Digite os números para o sorteio separados por vírgula</label>
+                    <input type="text" id="entradaNumeros" placeholder="Ex: 1, 5, 10, 23, 67">
+                    <button class="sortearNum">Sortear</button>
+                </div>
+                <div class="resultadoNum">
+                    <p>Resultado: </p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
